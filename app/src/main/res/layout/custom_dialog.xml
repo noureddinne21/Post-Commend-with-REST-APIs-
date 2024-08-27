@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Post"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            app:srcCompat="@drawable/baseline_close_24" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_add_post_tital2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_rounded"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Whats  on your mind?"
+        android:inputType="text"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/editText_add_post_body2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_rounded"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Whats  on your mind?"
+        android:inputType="text|textMultiLine"
+        android:padding="5dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="5dp">
+
+        <Button
+            android:id="@+id/button_add_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:text="REPOST"
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
